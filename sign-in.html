@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Curator - Sign In</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">Curator</div>
+      <span class="version-tag">v2.0.4</span>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <div class="form-wrapper">
+
+      <!-- Form Header -->
+      <div class="form-header animate-fade-in-up">
+        <h1>Welcome back.</h1>
+        <p class="subtitle">Sign in to your editorial feed.</p>
+      </div>
+
+      <!-- Card -->
+      <div class="card animate-fade-in-up stagger-1">
+        <form action="#" method="POST" onsubmit="event.preventDefault(); window.location.href='{{DATA:SCREEN:SCREEN_13}}';">
+
+          <!-- Email -->
+          <div class="field-group animate-fade-in-up stagger-2">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com" required/>
+          </div>
+
+          <!-- Password -->
+          <div class="field-group animate-fade-in-up stagger-3">
+            <div class="label-row">
+              <label for="password">Password</label>
+              <a class="forgot-link" href="#">Forgot?</a>
+            </div>
+            <input id="password" name="password" type="password" placeholder="••••••••" required/>
+          </div>
+
+          <!-- Submit -->
+          <div class="submit-wrap animate-fade-in-up stagger-4">
+            <button class="btn-primary" type="submit">Login</button>
+          </div>
+
+        </form>
+
+        <!-- Divider -->
+        <div class="divider-section animate-fade-in-up stagger-5">
+          <div class="divider-line"><div></div></div>
+          <div class="divider-label"><span>Or continue with</span></div>
+        </div>
+
+        <!-- Social -->
+        <div class="social-row animate-fade-in-up stagger-5">
+          <button class="btn-social btn-google" aria-label="Continue with Google">
+            <img alt="Google" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5_WRkf2OL9km0NLlEl3LgmexmB_8Nqu-RpZKxvPfUMaYz_p4NjnRLkERzDD4Gx8T3FX-vWGEX7DvCg-re57AYjEjXwM099vcjX6pSNuB1xpWu-yeLIAwf8UaAPhavvfN9NV6xvsbU8KvJg2yZy_bIxcs7zYrVUi9ddBUYrbScNhmO3195YZ-C5qm0hl_9WJCeItFQ15AdDu9_bRUotydG1uWxZ2882gpnU1wN_aPejyhOUEfiGnloH3X0q9rU8J-nKsK2rLFteKo"/>
+          </button>
+          <button class="btn-social btn-facebook" aria-label="Continue with Facebook">
+            <svg aria-hidden="true" fill="white" viewBox="0 0 24 24">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="form-footer animate-fade-in-up stagger-5">
+        <p>
+          Don't have an account?
+          <a class="link-primary" href="index.html">Create an account</a>
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Background Blobs -->
+  <div class="blob blob-primary"></div>
+  <div class="blob blob-tertiary"></div>
+
+  <!-- Side Image Panel -->
+  <div class="side-panel">
+    <div class="side-panel-overlay"></div>
+    <img
+      alt="abstract architectural photography of a minimalist white building with sharp geometric shadows"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb-DUaEMw1zGZxCQfNFvs7KKCbjjNhHaA3pL_K7fiA3CNneLgO54goW6jMQgXs0uj_jmfLCTVdoJ9OL7xFWrQbrWDSQyV_gJ_FLGK8C3VgEQjwLjqyNYJiBaqNZclG_r_03KPOa8CZI7imvcNs_vvbwW3_0Cz2pUhhYjt8AcbcQ6fesjrjcIeudcf3vqXER3E7ogJMAdoFTHovm-QiWNFYCl540-SGlIbucd65CXtieIwh4CaU-05DFcYFLPOXQOw-QS6dcVtktLQ"
+    />
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Curator - Create Account</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">Curator</div>
+      <div>
+        <span class="version-tag">v2.0.4</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <div class="form-wrapper">
+
+      <!-- Form Header -->
+      <div class="form-header">
+        <button aria-label="Go back" class="back-btn" onclick="window.location.href='sign-in.html'">
+          <span class="material-symbols-outlined">arrow_back</span>
+        </button>
+        <h1>Create Account</h1>
+        <p class="subtitle">Join Post and start sharing your stories.</p>
+      </div>
+
+      <!-- Card -->
+      <div class="card">
+        <form action="#" method="POST" onsubmit="event.preventDefault(); window.location.href='{{DATA:SCREEN:SCREEN_13}}'">
+
+          <!-- Full Name -->
+          <div class="field-group">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required/>
+          </div>
+
+          <!-- Email -->
+          <div class="field-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com" required/>
+          </div>
+
+          <!-- Password -->
+          <div class="field-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="••••••••" required/>
+            <p class="field-hint">Must be at least 8 characters long.</p>
+          </div>
+
+          <!-- Submit -->
+          <div class="submit-wrap">
+            <button class="btn-primary" type="submit">
+              <span>Sign Up</span>
+              <span class="material-symbols-outlined" style="font-size:1.1rem;">arrow_forward</span>
+            </button>
+          </div>
+
+        </form>
+
+        <!-- Divider -->
+        <div class="divider-section">
+          <div class="divider-line"><div></div></div>
+          <div class="divider-label"><span>Or continue with</span></div>
+        </div>
+
+        <!-- Social Buttons -->
+        <div class="social-row">
+          <button class="btn-social btn-google" aria-label="Continue with Google">
+            <img alt="Google" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5_WRkf2OL9km0NLlEl3LgmexmB_8Nqu-RpZKxvPfUMaYz_p4NjnRLkERzDD4Gx8T3FX-vWGEX7DvCg-re57AYjEjXwM099vcjX6pSNuB1xpWu-yeLIAwf8UaAPhavvfN9NV6xvsbU8KvJg2yZy_bIxcs7zYrVUi9ddBUYrbScNhmO3195YZ-C5qm0hl_9WJCeItFQ15AdDu9_bRUotydG1uWxZ2882gpnU1wN_aPejyhOUEfiGnloH3X0q9rU8J-nKsK2rLFteKo"/>
+          </button>
+          <button class="btn-social btn-facebook" aria-label="Continue with Facebook">
+            <svg aria-hidden="true" fill="white" viewBox="0 0 24 24">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="form-footer">
+        <p>
+          Already have an account?
+          <a class="link-primary" href="sign-in.html">Sign In</a>
+        </p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="dot-sep"></span>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Background Blobs -->
+  <div class="blob blob-primary"></div>
+  <div class="blob blob-tertiary"></div>
+
+</body>
+</html>
