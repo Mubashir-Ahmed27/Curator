@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Curator - Drafts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="header-left">
+          <button
+            class="close-btn"
+            aria-label="Close"
+            onclick="window.location.href = 'home.html'"
+          >
+            <span class="material-symbols-outlined">close</span>
+          </button>
+          <span class="logo">Curator</span>
+        </div>
+        <div class="header-right">
+          <button class="drafts-btn">Drafts</button>
+          <button class="save-btn" onclick="window.location.href = 'home.html'">
+            Save Post
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="content-wrap">
+        <section>
+          <!-- Title -->
+          <div>
+            <input
+              class="title-input"
+              placeholder="Untitled Moment"
+              type="text"
+            />
+          </div>
+
+          <!-- Meta Row -->
+          <div class="meta-row">
+            <div class="meta-item">
+              <span class="material-symbols-outlined">calendar_today</span>
+              <span>Today</span>
+            </div>
+            <div class="meta-item">
+              <span class="material-symbols-outlined">visibility</span>
+              <span>Public</span>
+            </div>
+            <div class="meta-item">
+              <span class="material-symbols-outlined">sell</span>
+              <span>Add tags</span>
+            </div>
+          </div>
+
+          <!-- Body Textarea -->
+          <div class="content-area">
+            <textarea
+              class="body-textarea"
+              placeholder="What's worth curating today?"
+            ></textarea>
+          </div>
+        </section>
+
+        <!-- Dropzone -->
+        <section class="dropzone-section">
+          <div
+            class="dropzone"
+            tabindex="0"
+            role="button"
+            aria-label="Upload feature content"
+          >
+            <img
+              class="dropzone-bg"
+              alt="Minimalist desk setup with a journal, fountain pen, and a small plant on a light wood surface"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO7aaRSAFFL9Cc3TAIiP4wqFrfgTOOqFcZsdzqOCihcHrGU_LJvyF8KGby5ov2FZ38y48QdVcma8Ye8724kjgZgUSrLEgcZz7fzs8RJTMZPhl3xxOxmggXav2qqzZOIBjn5sC5eQgJtoEp67y35zdW1bGRaCqtq-OuvDeyqakACtyecNaEr0FyxIL02JKnUz3oIo2lMjWNIJLlsEFGGS2H50UULOE0VFXC1ELrvAwM--bXfbCZSkOcTfC2WJjD2z1zHR0a_L9EeM8"
+            />
+            <div class="dropzone-content">
+              <div class="dropzone-icon">
+                <span class="material-symbols-outlined">add_a_photo</span>
+              </div>
+              <p class="dropzone-label">Feature Content</p>
+              <p class="dropzone-hint">Upload high-resolution media</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Mobile Bottom Bar -->
+    <div class="mobile-bottom">
+      <button
+        class="mobile-save-btn"
+        onclick="window.location.href = 'home.html'"
+      >
+        <span
+          class="material-symbols-outlined"
+          style="font-variation-settings: &quot;FILL&quot; 1"
+          >publish</span
+        >
+        Save Post
+      </button>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

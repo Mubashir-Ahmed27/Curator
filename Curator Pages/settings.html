@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Settings — Curator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Top Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="back-link" href="home.html" aria-label="Back">
+          <span class="material-symbols-outlined">arrow_back</span>
+        </a>
+        <span class="header-title">Settings</span>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Profile Section -->
+      <section>
+        <p class="section-label">Profile</p>
+        <div class="profile-card refined-hover">
+          <div class="profile-left">
+            <div class="avatar-wrap">
+              <img
+                alt="Profile Avatar"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHDeHt8AD-F21LEAq-q7QZQxyCW1WrecissEDTEyrMHOLPj4wxeKJXP_0qC3NcYJdZG40UxZ_iq41UhhaV1pNyrMRVIdC4Gmg2HKVB_2BYS60fH6ySUSUo_v_GM1InJjOLWXQdhc-ZVP5sF0B7g_fIXcNGbb24YmA2d1ssuOeJx41m_xs83MGiOwjrpYjleg6kefQjRK-rrILoYKEnTjK7xDbrQnAcpijUnxFH3J_1znpRu1ztRxsoeQf-1epCeLFDfy4TeLWieGk"
+              />
+              <div class="verified-dot">
+                <span class="material-symbols-outlined">verified</span>
+              </div>
+            </div>
+            <div>
+              <p class="profile-name">Alex Curator</p>
+              <p class="profile-handle">@alex_curator</p>
+            </div>
+          </div>
+          <button
+            class="btn-edit"
+            onclick="window.location.href = 'profile.html'"
+          >
+            Edit Profile
+          </button>
+        </div>
+      </section>
+
+      <!-- Account Section -->
+      <section>
+        <p class="section-label">Account</p>
+        <div class="settings-list">
+          <div class="settings-row refined-hover">
+            <div class="settings-row-left">
+              <div class="row-icon">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <div>
+                <p class="row-sublabel">Email Address</p>
+                <p class="row-value">alex@example.com</p>
+              </div>
+            </div>
+            <span class="material-symbols-outlined chevron">chevron_right</span>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="settings-row refined-hover">
+            <div class="settings-row-left">
+              <div class="row-icon">
+                <span class="material-symbols-outlined">lock</span>
+              </div>
+              <div>
+                <p class="row-sublabel">Password</p>
+                <p class="row-value">••••••••••••</p>
+              </div>
+            </div>
+            <span class="material-symbols-outlined chevron">chevron_right</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Notifications Section -->
+      <section>
+        <p class="section-label">Notifications</p>
+        <div class="toggle-list">
+          <label class="toggle-row refined-hover">
+            <span class="toggle-label">New Posts</span>
+            <div class="toggle-wrap">
+              <input class="toggle-input" type="checkbox" checked />
+              <div class="toggle-track"></div>
+            </div>
+          </label>
+
+          <label class="toggle-row refined-hover">
+            <span class="toggle-label">Direct Messages</span>
+            <div class="toggle-wrap">
+              <input class="toggle-input" type="checkbox" checked />
+              <div class="toggle-track"></div>
+            </div>
+          </label>
+
+          <label class="toggle-row refined-hover">
+            <span class="toggle-label">Editorial Updates</span>
+            <div class="toggle-wrap">
+              <input class="toggle-input" type="checkbox" />
+              <div class="toggle-track"></div>
+            </div>
+          </label>
+        </div>
+      </section>
+
+      <!-- Preferences Section -->
+      <section>
+        <p class="section-label">Preferences</p>
+        <div class="prefs-grid">
+          <div class="pref-card refined-hover">
+            <div class="pref-header">
+              <span class="material-symbols-outlined">dark_mode</span>
+              <span>Theme</span>
+            </div>
+            <div class="theme-pill">
+              <button class="theme-btn active">Light</button>
+              <button class="theme-btn">Dark</button>
+            </div>
+          </div>
+
+          <div class="pref-card refined-hover">
+            <div class="pref-header">
+              <span class="material-symbols-outlined">translate</span>
+              <span>Language</span>
+            </div>
+            <div class="lang-select">
+              <span>English (US)</span>
+              <span class="material-symbols-outlined">unfold_more</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Support Section -->
+      <section>
+        <p class="section-label">Support</p>
+        <div class="support-list">
+          <div class="support-row refined-hover">
+            <span class="material-symbols-outlined">help</span>
+            <span class="label">Help Center</span>
+            <span class="material-symbols-outlined arrow-out"
+              >arrow_outward</span
+            >
+          </div>
+
+          <div class="support-row refined-hover">
+            <span class="material-symbols-outlined">description</span>
+            <span class="label">Terms of Service</span>
+            <span class="material-symbols-outlined arrow-out"
+              >arrow_outward</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Danger Zone -->
+      <section style="padding-top: 1rem">
+        <p class="section-label danger">Danger Zone</p>
+        <div class="danger-list">
+          <a class="danger-row refined-hover" href="../index.html">
+            <span class="material-symbols-outlined">logout</span>
+            <span class="label">Logout</span>
+          </a>
+
+          <div class="divider"></div>
+
+          <button class="danger-row delete refined-hover">
+            <span class="material-symbols-outlined">delete_forever</span>
+            <span class="label">Delete Account</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom Nav (mobile only) -->
+    <nav class="bottom-nav">
+      <div class="bottom-nav-inner">
+        <a class="nav-item" href="home.html">
+          <span class="material-symbols-outlined">grid_view</span>
+          <span class="nav-label">Feed</span>
+        </a>
+
+        <a class="nav-item" href="drafts.html">
+          <span class="material-symbols-outlined">auto_awesome</span>
+          <span class="nav-label">Curate</span>
+        </a>
+
+        <a class="nav-item" href="profile.html">
+          <span class="material-symbols-outlined">person</span>
+          <span class="nav-label">Profile</span>
+        </a>
+
+        <a class="nav-item active" href="#">
+          <span class="material-symbols-outlined">settings</span>
+          <span class="nav-label">Settings</span>
+        </a>
+      </div>
+    </nav>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

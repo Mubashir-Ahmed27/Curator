@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Curator - Creator Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Top Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <button
+          class="icon-btn"
+          aria-label="Back"
+          onclick="window.location.href = 'home.html'"
+        >
+          <span class="material-symbols-outlined">arrow_back</span>
+        </button>
+        <span class="header-title">Creator Profile</span>
+        <button class="icon-btn" aria-label="More options">
+          <span class="material-symbols-outlined">more_vert</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Profile Header -->
+      <section class="profile-section animate-fade-in-up">
+        <div class="avatar-wrap">
+          <div class="avatar-ring editorial-shadow">
+            <img
+              alt="Alex Curator Profile"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDloWwzQpMRinIC4L5Z1ly8IJDN6zdPYRfdSiLJKk3WxbGP4mNLFxLLTsii_6J8YUK3A4tIDuLSOCGIpCUNsPtoIvQ3djWanh7348p6sv31IZX_c6AiPv8in6MfOTWzC2L7I16hI163I8YhpYBN0btBbmpcBu_ERBUiBwWI2qIyPOf0AX6u0MsTLShUiDQjO8hO0gF2mjsAR-gnm4-Wyf0TsCUd9yq1rId8WZCBrtdoIiVXs8DyuheIe-Vavc3pqq22cwFagZQ0Dck"
+            />
+          </div>
+          <span class="premium-badge">Premium</span>
+        </div>
+
+        <div class="profile-info">
+          <div class="profile-name-wrap">
+            <h2>Alex Curator</h2>
+            <p class="profile-role">Digital Editorialist</p>
+          </div>
+          <p class="profile-bio">
+            Curating the intersection of brutalist architecture and minimalist
+            digital systems. Editor at <strong>The Grid.</strong>
+          </p>
+          <div class="stats-row">
+            <div class="stat">
+              <span class="stat-value">142</span>
+              <span class="stat-label">Posts</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">12.4k</span>
+              <span class="stat-label">Followers</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">850</span>
+              <span class="stat-label">Following</span>
+            </div>
+          </div>
+          <div class="action-row">
+            <button class="btn-follow editorial-shadow">Follow</button>
+            <button class="btn-message">Message</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feed Header -->
+      <div class="feed-header animate-fade-in-up stagger-1">
+        <span class="feed-label">Editorial Feed</span>
+        <div class="feed-controls">
+          <span
+            class="material-symbols-outlined"
+            style="
+              color: var(--color-primary);
+              font-variation-settings:
+                &quot;FILL&quot; 1,
+                &quot;wght&quot; 400,
+                &quot;GRAD&quot; 0,
+                &quot;opsz&quot; 24;
+            "
+            >grid_view</span
+          >
+          <span
+            class="material-symbols-outlined"
+            style="color: var(--color-outline)"
+            >view_day</span
+          >
+        </div>
+      </div>
+
+      <!-- Bento Grid -->
+      <div class="bento-grid">
+        <!-- Featured Post -->
+        <article class="post-card col-8 animate-fade-in-up stagger-2">
+          <div class="post-card-inner card-featured editorial-shadow">
+            <div class="card-image">
+              <img
+                alt="Brutalist Architecture"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpw2L0dih8M7wfQhwtT6mDeQC53uOkxNUnaWXDEYCH72hA1fBjQ7k_tQjFH7aSwdMOEe6yAeJ0cK4Xb29EC_df6c0JE_HU650P6btDWt7jDlLr7j8TDZCo4EAcHzGnO9PVt0m8gDcGBnYw5OHd15z-iYr8gRopjAO60_X4upN1F67kBM_OoFaNiz9OlhGWwPG0kVNTPVBEYHP06ywdJOPX076Y_e0-PViL55N9IbEucoSnw0kuFYVI56lZsHjdRBQEa2K8Re_hy2c"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag-primary">Architecture</span>
+                <span class="tag-date">OCT 24, 2023</span>
+              </div>
+              <h4 class="card-title-lg">
+                The Raw Silence of Concrete Monoliths
+              </h4>
+              <p class="card-excerpt">
+                Exploring the emotional resonance of exposed structures in
+                modern European design and how they define our digital
+                navigation patterns.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Side Post 1 -->
+        <article class="post-card col-4 animate-fade-in-up stagger-3">
+          <div class="post-card-inner card-side">
+            <div class="card-image">
+              <img
+                alt="Minimalist Tech"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz2aGle-IOYA7YgyWQu3i3jTrDfY_J0rxV_y9MdlNI21MdHugaQpm2OqHWEiHkHEBFGqz5OPLAlokJ1JGFRYqTUbz-mYVCEVOowlm7bvD_JItdcAR3A8gAyicK8qCqF95RZYlFAx62qdWlGURLcIduacZpPBjHGnX1YJ7JGtK5IakBao4yHvgjNsc7L8s3SPcuDuOyCQAhViXGE10W07Jzvu-m92NxtPnbFfdXMrO_393OqDBZ9z1Aabsox1b_bTq9GNtWwziqK9U"
+              />
+            </div>
+            <span class="tag-primary">Systems</span>
+            <h4 class="card-title-md">Minimalist OS: A Study in Restraint</h4>
+            <p class="card-excerpt-sm">
+              Why removing UI density increases cognitive throughput in creative
+              environments.
+            </p>
+          </div>
+        </article>
+
+        <!-- Side Post 2 -->
+        <article class="post-card col-4 animate-fade-in-up stagger-4">
+          <div class="post-card-inner card-side">
+            <div class="card-image">
+              <img
+                alt="Light Play"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdSR9wdOLvlDdZx4PPpnsYr1NC6f2jgfqa42INqI7fndGdz6roE8bclGVvEZGIqOEgaU81ifSsFlXHT5I3hCbntZaCKxx_NgEv3AQ7WqsKJrRiyvVjvfb2JYN3FovPHq-tQ5cF3lGO1kikdAw4GSMpRppAa9Nu2RaKdmFZQaE2O6AeRArGCAfhFPAB2lKJgF2c4oKlozQOtKgwSFLxUlwrT9uCMo5OGkV3yE6HiORvRNG3H2yH2VLDzZ8zZSUHvZfyGVBO4IzHJOk"
+              />
+            </div>
+            <span class="tag-primary">Light</span>
+            <h4 class="card-title-md">Tonal Layering in Visual Web Design</h4>
+            <p class="card-excerpt-sm">
+              Moving beyond borders: How to create depth using 2% shifts in
+              surface color.
+            </p>
+          </div>
+        </article>
+
+        <!-- Second Large Post -->
+        <article class="post-card col-8 animate-fade-in-up stagger-5">
+          <div class="post-card-inner card-split-wrap editorial-shadow">
+            <div class="card-split-grid">
+              <div class="card-split">
+                <div class="card-image">
+                  <img
+                    alt="Staircase Abstract"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKaGl3wwvWqWk0Zmv1wOclCwz8ajYl-O5JKdyX3vbB9l_Nxalr3lr65Slfgws9FdXS-dVklzxVfD0Dju0jnR8aGIL5-apOJERtWr9-pO0SBTcdRnMNC5XBrog3PeBfRKIdHrSqEJvE0x6Ce7Qqsq9P-sManIoNLeyy2KoZmgEPZQGUUBTSi9giT77nTbUe86jj54agOrwhwCwiWaYEPP06kR9rOHlsQsEQc8xhYqCy9ok5ADSEKC17ldFUgPYdpJCf1Ofx2COWbhw"
+                  />
+                </div>
+              </div>
+              <div class="card-split-body">
+                <div class="card-meta">
+                  <span class="tag-primary">Abstract</span>
+                  <span class="tag-date">SEP 12, 2023</span>
+                </div>
+                <h4 class="card-title-split">
+                  Curating Flow: The User Journey as Architecture
+                </h4>
+                <p class="card-excerpt-split">
+                  Understanding spatial navigation in physical buildings to
+                  better map digital information hierarchies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- Bottom Nav -->
+    <nav class="bottom-nav">
+      <button
+        class="nav-btn"
+        aria-label="Home"
+        onclick="window.location.href = 'home.html'"
+      >
+        <span class="material-symbols-outlined">home</span>
+      </button>
+      <button
+        class="nav-btn"
+        aria-label="Create"
+        onclick="window.location.href = 'drafts.html'"
+      >
+        <span class="material-symbols-outlined">add_box</span>
+      </button>
+      <button
+        class="nav-btn active"
+        aria-label="Profile"
+        onclick="window.location.href = 'profile.html'"
+      >
+        <span
+          class="material-symbols-outlined"
+          style="
+            font-variation-settings:
+              &quot;FILL&quot; 1,
+              &quot;wght&quot; 400,
+              &quot;GRAD&quot; 0,
+              &quot;opsz&quot; 24;
+          "
+          >person</span
+        >
+      </button>
+    </nav>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

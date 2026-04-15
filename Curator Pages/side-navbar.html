@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Top Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="header-left">
+          <button class="menu-btn" aria-label="Menu">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+          <span class="logo">Curator</span>
+        </div>
+        <div>
+          <div
+            class="header-avatar"
+            onclick="window.location.href = 'profile.html'"
+          >
+            <img
+              alt="User avatar"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMxns50fkOPccxyKQ0KwlmCYon7vHQiihD_kGxOExEyueE8QLGM0XS1-r0VeTCMmixqWvA1GdxN0nCCUEsbztEavvgsbuillwokz1BVYAqYtLsSXdahFPTFV2YjBv6W5f6X5sjTodSgQPeMUEDSRrlk6mkI13y4G-uFOcQKsfvnzEtjyVtgH6jSYLUdygMr00EzhwCeu9p_MpsSlRsO68jMqFyj0A2WWB3jFN0cuSQi6XXtJ-9Gf9DkiQhSeLi9htT2FSqfNRYasc"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section>
+        <div class="section-header">
+          <h2>Today's Curation</h2>
+          <span class="vol-label">Vol. 42</span>
+        </div>
+        <div class="bento-grid">
+          <!-- Image Card -->
+          <div class="bento-card">
+            <div class="bento-image-wrap">
+              <img
+                alt="Modern minimalist workspace with high-end tech equipment"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxavRy51FA2WAS3b6Z_4tjK9vG5POPP2J3gokUoHQ1qHaZzf85JOxyG_Pp4RFrUXwm_blPDENfoA7CQL-AvSDwsJ4VxWaZom8viXpxWXjhUrPJ4XUCduqxBFCOhlOnILiwyzokUb30JiV3NQptnUjaqKvkP6tTHBXfnvzuOY-xj4JBfuVyZEHH6EO9bHSb3oLRMCyAB4ddESyWD4eRAAxRPC0PFxHSqNx9Fxkxg0CPWirE6J2rumWaX1aZtPtkPhKkXFAzghGNxvE"
+              />
+            </div>
+            <div class="bento-body">
+              <div><span class="tag-primary">Editorial</span></div>
+              <h3>
+                The intersection of tactile design and digital interfaces.
+              </h3>
+              <p>
+                Exploring how physical textures influence our digital perception
+                of luxury and craftsmanship.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quote Card -->
+          <div class="quote-card">
+            <div>
+              <span class="trending-label">Trending Now</span>
+              <blockquote>
+                "Simplicity is the ultimate sophistication."
+              </blockquote>
+            </div>
+            <div class="quote-author">
+              <div class="author-avatar"></div>
+              <div>
+                <p class="author-name">Dieter R.</p>
+                <p class="author-role">Industrial Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Navigation Drawer -->
+    <aside class="drawer">
+      <!-- Header -->
+      <div class="drawer-header">
+        <div class="drawer-profile">
+          <div class="drawer-avatar-wrap">
+            <div class="drawer-avatar">
+              <img
+                alt="User avatar"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuABj1O5-2-6jE_WpVFKheodrVqV5RQ_8W8PuyAvtnq9JgWF4o1TB0WWUbPoRABn6ft5OzG1PJppxzvgOldbHJ-BRIio5xZ3qQx53r-7CKq1OsqY51RmHQ6MpypyPwWRQ8RMWzR-KAdGLMpKE6A6glLkmvOGgaYfyA0GfP0RGPK6V0kr2j0fE5LUpPtBVHDZN1LHqDRPDCxt8rj56IkFhgTd4aZFF5Yd4Z6KWYa1UT70L00flaCmD51yJ-wmtBbvYN71UhsZhf_sRWg"
+              />
+            </div>
+            <div class="verified-badge">
+              <span class="material-symbols-outlined">verified</span>
+            </div>
+          </div>
+          <div class="drawer-user-info">
+            <h2>Alex Curator</h2>
+            <p>Digital Editorialist</p>
+            <span class="premium-badge">Premium Member</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav Links -->
+      <nav class="drawer-nav">
+        <a class="nav-item active" href="home.html">
+          <span
+            class="material-symbols-outlined"
+            style="
+              font-variation-settings:
+                &quot;FILL&quot; 1,
+                &quot;wght&quot; 400,
+                &quot;GRAD&quot; 0,
+                &quot;opsz&quot; 24;
+            "
+            >dynamic_feed</span
+          >
+          <span>Feed</span>
+        </a>
+        <a class="nav-item" href="drafts.html">
+          <span class="material-symbols-outlined">edit_note</span>
+          <span>Drafts</span>
+        </a>
+        <a class="nav-item" href="profile.html">
+          <span class="material-symbols-outlined">person</span>
+          <span>Profile</span>
+        </a>
+        <hr class="nav-divider" />
+        <a class="nav-item" href="home.html">
+          <span class="material-symbols-outlined">settings</span>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <!-- Footer -->
+      <div class="drawer-footer">
+        <a class="logout-link" href="sign-in.html">
+          <span class="material-symbols-outlined">logout</span>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Bottom Nav (mobile) -->
+    <nav class="bottom-nav">
+      <a class="bottom-nav-item active" href="home.html">
+        <span
+          class="material-symbols-outlined"
+          style="
+            font-variation-settings:
+              &quot;FILL&quot; 1,
+              &quot;wght&quot; 400,
+              &quot;GRAD&quot; 0,
+              &quot;opsz&quot; 24;
+          "
+          >home_storage</span
+        >
+      </a>
+      <a class="bottom-nav-item" href="drafts.html">
+        <span class="material-symbols-outlined">add_box</span>
+      </a>
+      <a class="bottom-nav-item" href="profile.html">
+        <span class="material-symbols-outlined">person</span>
+      </a>
+    </nav>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

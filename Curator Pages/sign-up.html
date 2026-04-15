@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Curator - Sign In</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Curator - Create Account</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -20,9 +21,7 @@
     <header class="site-header">
       <div class="header-inner">
         <div class="logo">Curator</div>
-        <div>
-          <span class="version-tag">v2.0.4</span>
-        </div>
+        <span class="version-tag">v2.0.4</span>
       </div>
     </header>
 
@@ -30,20 +29,13 @@
     <main>
       <div class="form-wrapper">
         <!-- Form Header -->
-        <div class="form-header">
-          <button
-            aria-label="Go back"
-            class="back-btn"
-            onclick="window.location.href = 'Curator Pages/sign-up.html'"
-          >
-            <span class="material-symbols-outlined">arrow_back</span>
-          </button>
-          <h1>Create Account</h1>
-          <p class="subtitle">Join Post and start sharing your stories.</p>
+        <div class="form-header animate-fade-in-up">
+          <h1>Welcome back.</h1>
+          <p class="subtitle">Sign in to your editorial feed.</p>
         </div>
 
         <!-- Card -->
-        <div class="card">
+        <div class="card animate-fade-in-up stagger-1">
           <form
             action="#"
             method="POST"
@@ -52,20 +44,8 @@
               window.location.href = 'home.html';
             "
           >
-            <!-- Full Name -->
-            <div class="field-group">
-              <label for="name">Full Name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Enter your name"
-                required
-              />
-            </div>
-
             <!-- Email -->
-            <div class="field-group">
+            <div class="field-group animate-fade-in-up stagger-2">
               <label for="email">Email Address</label>
               <input
                 id="email"
@@ -77,8 +57,11 @@
             </div>
 
             <!-- Password -->
-            <div class="field-group">
-              <label for="password">Password</label>
+            <div class="field-group animate-fade-in-up stagger-3">
+              <div class="label-row">
+                <label for="password">Password</label>
+                <a class="forgot-link" href="#">Forgot?</a>
+              </div>
               <input
                 id="password"
                 name="password"
@@ -86,30 +69,22 @@
                 placeholder="••••••••"
                 required
               />
-              <p class="field-hint">Must be at least 8 characters long.</p>
             </div>
 
             <!-- Submit -->
-            <div class="submit-wrap">
-              <button class="btn-primary" type="submit">
-                <span>Sign Up</span>
-                <span
-                  class="material-symbols-outlined"
-                  style="font-size: 1.1rem"
-                  >arrow_forward</span
-                >
-              </button>
+            <div class="submit-wrap animate-fade-in-up stagger-4">
+              <button class="btn-primary" type="submit">Login</button>
             </div>
           </form>
 
           <!-- Divider -->
-          <div class="divider-section">
+          <div class="divider-section animate-fade-in-up stagger-5">
             <div class="divider-line"><div></div></div>
             <div class="divider-label"><span>Or continue with</span></div>
           </div>
 
-          <!-- Social Buttons -->
-          <div class="social-row">
+          <!-- Social -->
+          <div class="social-row animate-fade-in-up stagger-5">
             <button
               class="btn-social btn-google"
               aria-label="Continue with Google"
@@ -133,16 +108,11 @@
         </div>
 
         <!-- Footer -->
-        <div class="form-footer">
+        <div class="form-footer animate-fade-in-up stagger-5">
           <p>
-            Already have an account?
-            <a class="link-primary" href="Curator Pages/sign-up.html">Sign In</a>
+            Don't have an account?
+            <a class="link-primary" href="../index.html">Create an account</a>
           </p>
-          <div class="legal-links">
-            <a href="#privacy">Privacy Policy</a>
-            <span class="dot-sep"></span>
-            <a href="#terms">Terms of Service</a>
-          </div>
         </div>
       </div>
     </main>
@@ -151,6 +121,15 @@
     <div class="blob blob-primary"></div>
     <div class="blob blob-tertiary"></div>
 
-    <script src="script.js"></script>
+    <!-- Side Image Panel -->
+    <div class="side-panel">
+      <div class="side-panel-overlay"></div>
+      <img
+        alt="abstract architectural photography of a minimalist white building with sharp geometric shadows"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb-DUaEMw1zGZxCQfNFvs7KKCbjjNhHaA3pL_K7fiA3CNneLgO54goW6jMQgXs0uj_jmfLCTVdoJ9OL7xFWrQbrWDSQyV_gJ_FLGK8C3VgEQjwLjqyNYJiBaqNZclG_r_03KPOa8CZI7imvcNs_vvbwW3_0Cz2pUhhYjt8AcbcQ6fesjrjcIeudcf3vqXER3E7ogJMAdoFTHovm-QiWNFYCl540-SGlIbucd65CXtieIwh4CaU-05DFcYFLPOXQOw-QS6dcVtktLQ"
+      />
+    </div>
+
+    <script src="../script.js"></script>
   </body>
 </html>
