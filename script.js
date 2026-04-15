@@ -665,6 +665,10 @@ function initGlobalFeatures() {
     // Add loading states to buttons
     const buttons = document.querySelectorAll('button');
     buttons.forEach(btn => {
+        if (!btn.hasAttribute('onclick')) {
+            btn.setAttribute('onclick', 'handleGlobalButtonClick(event)');
+        }
+
         btn.addEventListener('click', function() {
             // Add loading state briefly
             if (!this.classList.contains('loading')) {
@@ -720,6 +724,13 @@ function initGlobalFeatures() {
             }
         }
     }
+}
+
+// Global button click handler
+function handleGlobalButtonClick(event) {
+    const button = event.currentTarget || event.target;
+    const label = button.getAttribute('aria-label') || button.textContent.trim() || button.className;
+    console.log('Button clicked:', label);
 }
 
 // Utility functions
